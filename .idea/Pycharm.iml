@@ -5,8 +5,10 @@
       <excludeFolder url="file://$MODULE_DIR$/Cursoemvideo/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/PythonExercícios/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/PythonTeste/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/PyCharmExercícios/.venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.14 (Pycharm)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
