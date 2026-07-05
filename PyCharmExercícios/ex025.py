@@ -1,2 +1,2 @@
-n = input('Digite o nome completo: ')
-print('SILVA' in n)
+nome = str(input('Digite o nome completo: ')).strip()
+print('Seu nome: {}'.format('silva' in nome.lower()))

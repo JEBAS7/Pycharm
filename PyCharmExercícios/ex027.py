@@ -1,4 +1,5 @@
-nome = input('Digite o nome completo: ')
+nome = input('Digite o nome completo: ').strip()
 dividido = nome.split()
+print('Muito prazer em te conhecer')
 print('O primeiro nome é = ', dividido[0])
 print('O último nome é ', dividido[-1])

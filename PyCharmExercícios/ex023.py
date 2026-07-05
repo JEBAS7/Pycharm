@@ -1,5 +1,9 @@
-n = '1834'
-print('Unidade:', n[3:])
-print('Dezena:', n[2:3])
-print('Centena:', n[1:2])
-print('Milhar:', n[:1])
+n = int(input('Informe um numero inteiro: '))
+u = n // 1 % 10
+d = n // 10 % 10
+c = n // 100 % 10
+m = n // 1000 % 10
+print('Unidade: {}'.format(u))
+print('Dezena: {}'.format(d))
+print('Centena: {}'.format(c))
+print('Milhar: {}'.format(m))
