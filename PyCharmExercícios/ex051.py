@@ -1,5 +1,6 @@
-inicio = int(input('Inicio: '))
+primeiro = int(input('Primero termo: '))
 razao = int(input('Razao: '))
-passo = int(input('Passo: '))
-for c in range(inicio, razao, passo):
-    print(c, end=' ')
+décimo = primeiro + (10 - 1) * razao
+for c in range(primeiro, décimo + razao, razao):
+    print('{}'.format(c), end=' → ')
+print('ACABOU')
