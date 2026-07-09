@@ -14,14 +14,17 @@ for c in range(1, 5):
     somaidade += idade
 
     # Identifica o homem mais velho
+    # if c == 1 and sexo in 'Mm':
     if c == 1 and sexo == 'M':
         maioridadehomem = idade
         nomevelho = nome
+    # if sexo in 'Mm' and idade > maioridadehomem:
     if sexo == 'M' and idade > maioridadehomem:
         maioridadehomem = idade
         nomevelho = nome
 
     # Conta mulheres com menos de 20 anos
+    # if sexo in 'Ff' and idade < 20:
     if sexo == 'F' and idade < 20:
         totmulher20 += 1
 
