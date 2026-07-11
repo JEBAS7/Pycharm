@@ -1,7 +1,6 @@
 print('-' * 30)
 print(f'     LOJA BISPO')
 print('-' * 30)
-
 tot_gasto = 0
 tot_mil = 0
 barato = 0
@@ -35,5 +34,5 @@ print('----- FIM DO PROGRAMA -----')
 print('=-' * 20)
 print(f'Total gasto na compra: R$ {tot_gasto:.2f}')
 print(f'Temos {tot_mil} produtos custando mais de R$ 1000.00')
-print(f'O produto mais barato foi {nome_barato} custando R$ {barato:.2f}')
+print(f'O produto mais barato foi {nome_barato} custando R${barato:.2f}')
 print('=-' * 20)

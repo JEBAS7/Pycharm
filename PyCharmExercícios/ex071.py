@@ -1,7 +1,6 @@
 print('=' * 30)
 print(f'{'BANCO DO CEV':^30}')
 print('=' * 30)
-
 valor = int(input('Qual valor você quer sacar? R$'))
 
 # Variáveis para contar o total de cada cédula

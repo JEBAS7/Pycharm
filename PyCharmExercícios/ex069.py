@@ -1,8 +1,5 @@
 # Inicialização correta dos contadores numéricos
-pessoa = 0
-tot18 = 0
-tot_homens = 0
-tot_mulheres20 = 0
+pessoa = tot18 = tot_homens = tot_mulheres20 = 0
 
 while True:
     print('-' * 30)
@@ -27,7 +24,6 @@ while True:
     pessoa += 1
 
     print('-' * 30)
-
     # Validação simples para aceitar apenas S ou N
     resp = ' '
     while resp not in 'SN':

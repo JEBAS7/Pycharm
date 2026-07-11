@@ -3,9 +3,7 @@ from random import randint
 print('=-' * 30)
 print('VAMOS JOGAR PAR OU ÍMPAR')
 print('=-' * 30)
-
 jogador = 0  # Contagem de vitórias começa em zero
-
 while True:
     n = int(input('Diga um valor: '))
     palpite = str(input('Par ou Ímpar? [P/I] ')).strip().upper()[0]

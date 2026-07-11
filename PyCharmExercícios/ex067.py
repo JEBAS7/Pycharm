@@ -9,5 +9,4 @@ while True:
     for c in range(1, 11):
         print(f'{n} x {c:2} = {n * c}')
     print('*=' * 8)
-
-print('PROGRAMA TABUADA ENCERRADO. volte sempre!')
+print('PROGRAMA TABUADA ENCERRADO. Volte sempre!')
