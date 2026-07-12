@@ -1,16 +1,9 @@
 from random import randint
 
-# Cria uma lista vazia para guardar os 5 números
-valores = []
-
-# Sorteia 5 números de 1 a 10 e guarda na lista
-for _ in range(5):
-    num = randint(1, 10)
-    valores.append(num)
-
-# Exibe os resultados
-print(f'Os valores sorteados foram: {valores}')
-print(f'O maior valor sorteado foi {max(valores)}')
+valores = (randint(1, 10), randint(1, 10), randint(1, 10),
+           randint(1, 10), randint(1, 10))
+print('Os valores sorteados foram:', end='')
+for numero in valores:
+    print(f'{numero} ', end='')
+print(f'\nO maior valor sorteado foi {max(valores)}')
 print(f'O menor valor sorteado foi {min(valores)}')
-
-
