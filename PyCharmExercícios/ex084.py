@@ -8,7 +8,7 @@ while True:
     dados.clear()
 
     p = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
-    if p == 'N':
+    if p == 'Nn':
         break
 
 print('-=' * 30)

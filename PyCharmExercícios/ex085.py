@@ -14,3 +14,4 @@ print('-=' * 30)
 # sorted() mostra os números em ordem crescente
 print(f'Os valores pares digitados foram: {sorted(valores[0])}')
 print(f'Os valores ímpares digitados foram: {sorted(valores[1])}')
+print('-=' * 30)
