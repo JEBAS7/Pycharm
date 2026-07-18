@@ -22,7 +22,6 @@ while tot <= quant:
             cont += 1
         if cont >= 6:
             break
-
     dados_jogo.sort()  # Coloca o jogo em ordem crescente
     lista_jogos.append(dados_jogo[:])  # Copia o jogo para a lista principal
     dados_jogo.clear()  # Limpa para o próximo jogo

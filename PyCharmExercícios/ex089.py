@@ -23,7 +23,6 @@ while True:
 print('-=' * 30)
 print(f'{"Nº.":<4}{"NOME":<10}{"MÉDIA":>8}')
 print('-' * 30)
-
 # Mostra a tabela de médias de todos os alunos
 for i, aluno in enumerate(notas):
     # aluno[0] é o Nome, aluno[2] é a Média

@@ -32,3 +32,5 @@ maior_seg_linha = max(matriz[1])
 print(f'A soma dos valores pares é {soma_pares}.')
 print(f'A soma dos valores da terceira coluna é {tercol}.')
 print(f'O maior valor da segunda linha é {maior_seg_linha}.')
+
+print('-=' * 30)
