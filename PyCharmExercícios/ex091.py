@@ -25,3 +25,5 @@ print('\n=== RANKING DOS JOGADORES ===')
 for i, v in enumerate(ranking):
     print(f'{i+1}º lugar: {v[0]} com {v[1]} pontos.')
     sleep(1)
+print()
+input('Aperte ENTER para sair...')
