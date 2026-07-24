@@ -19,11 +19,11 @@ for k, v in jogo.items():
 
 # 2. Ordena o dicionário pelos valores (itemgetter(1)) em ordem decrescente
 ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
-
-print('\n=== RANKING DOS JOGADORES ===')
+print('-=' * 30)
+print('======== RANKING DOS JOGADORES ========')
 # 3. Mostra o resultado final formatado
 for i, v in enumerate(ranking):
-    print(f'{i+1}º lugar: {v[0]} com {v[1]} pontos.')
+    print(f'    {i+1}º lugar: {v[0]} com {v[1]} pontos.')
     sleep(1)
 print()
 input('Aperte ENTER para sair...')

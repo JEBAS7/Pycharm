@@ -18,17 +18,17 @@ if trabalhador['carteira'] != 0:
     ano_aposentadoria = trabalhador['contratacao'] + 35
     trabalhador['aposentadoria'] = trabalhador['idade'] + (ano_aposentadoria - date.today().year)
 
-print('-=' * 20)
+print('-=' * 30)
 
 # 3. Exibe os resultados na tela de forma organizada
-print(f' - Nome: {trabalhador["nome"]}')
-print(f' - Idade: {trabalhador["idade"]} anos')
-print(f' - CTPS: {trabalhador["carteira"]}')
+print(f'    - Nome: {trabalhador["nome"]}')
+print(f'    - Idade: {trabalhador["idade"]} anos')
+print(f'    - CTPS: {trabalhador["carteira"]}')
 
 # Só mostra os dados contratuais se a carteira for diferente de zero
 if trabalhador['carteira'] != 0:
-    print(f' - Ano de contratação: {trabalhador["contratacao"]}')
-    print(f' - Salário: R$ {trabalhador["salario"]:.2f}')
-    print(f' - Aposentadoria com: {trabalhador["aposentadoria"]} anos')
+    print(f'    - Ano de contratação: {trabalhador["contratacao"]}')
+    print(f'    - Salário: R$ {trabalhador["salario"]:.2f}')
+    print(f'    - Aposentadoria com: {trabalhador["aposentadoria"]} anos')
 
-print('-=' * 20)
+print('-=' * 30)
