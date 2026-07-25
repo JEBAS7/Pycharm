@@ -9,7 +9,7 @@ while True:
 
     # Validação do Sexo (Só aceita M ou F)
     while True:
-        pessoa['sexo'] = str(input('Sexo: [M/F] ')).strip().upper()
+        pessoa['sexo'] = str(input('Sexo: [M/F] ')).strip().upper()[0]
         if pessoa['sexo'] in 'MF':
             break
         print('ERRO! Por favor, digite apenas M ou F.')
@@ -28,7 +28,7 @@ while True:
 
     # Validação da Resposta (Só aceita S ou N)
     while True:
-        resp = str(input('Quer continuar? [S/N] ')).strip().upper()
+        resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
         if resp in 'SN':
             break
         print('ERRO! Responda apenas S ou N.')
