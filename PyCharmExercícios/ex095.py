@@ -4,7 +4,12 @@ galera = list()  # AJUSTE 1: Lista global para salvar todos os jogadores
 
 while True:
     jogador['nome'] = str(input('Nome: ')).strip()
-    partidas = int(input(f'Quantas partidas {jogador["nome"]}: '))
+    while True:
+        try:
+            partidas = int(input(f'Quantas partidas {jogador["nome"]}: '))
+            break
+        except ValueError:
+            print('Por favor, digite um número inteiro válido! ')
 
     # 2. Laço para ler os gols de CADA partida e adicionar na lista
     for c in range(0, partidas):
@@ -27,26 +32,35 @@ while True:
         break
 
 # --- PARTE DO PRINT DA TABELA GERAL ---
-print('-' * 40)
+print('-' * 60)
 print(f'{"cod":<4}{"nome":<10}{"gols":<15}{"total":<5}')
-print('-' * 40)
+print('-' * 60)
 
 # Mostra todos os jogadores cadastrados em formato de tabela
 for i, j in enumerate(galera):
-    print(f'{i:<4}{j["nome"]:<10}{str(j["gols"]):<15}{j["total"]:<5}')
-print('-' * 40)
+    print(f'{i + 1:<4}{j["nome"]:<10}{str(j["gols"]):<15}{j["total"]:<5}')
+print('-' * 60)
 
 # --- PARTE DO SISTEMA DE BUSCA DETALHADA ---
+
 while True:
-    busca = int(input('Mostrar dados de qual jogador? (999 para parar): '))
-    if busca == 999:
-        break
-    if busca >= len(galera) or busca < 0:
+    try:
+        busca = int(input('Mostrar dados de qual jogador? (999 para parar): '))
+        if busca == 999:
+            break
+    except ValueError:
+        print('Por favor, digite um número inteiro válido! ')
+        continue  # <--- ADICIONE ISSO: Volta para o início do laço e ignora os testes abaixo
+
+    # AJUSTE CORREÇÃO: Como o visual mostra 1, 2, 3... validamos se o código é maior que o tamanho da lista ou menor que 1.
+    if busca > len(galera) or busca < 1:
         print(f'ERRO! Não existe jogador com código {busca}!')
     else:
-        print(f' -- LEVANTAMENTO DO JOGADOR {galera[busca]["nome"].upper()}:')
-        for i, g in enumerate(galera[busca]['gols']):
-            print(f'    No jogo {i + 1} fez {g} gols.')
-    print('-' * 40)
+        # AJUSTE CORREÇÃO: Subtraímos 1 da busca para acessar o índice real correto (0, 1, 2...)
+        indice_real = busca - 1
+        print(f' -- LEVANTAMENTO DO JOGADOR {galera[indice_real]["nome"].upper()}:')
+        for i, g in enumerate(galera[indice_real]['gols']):
+            print(f'    No {i + 1}º jogo fez {g} gols.')
+    print('-' * 60)
 
 print('<< VOLTE SEMPRE >>')
