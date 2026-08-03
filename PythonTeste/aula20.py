@@ -1,3 +1,25 @@
+def lin():
+    print('-' * 30)
+
+# Programa Principal
+lin()
+print('     CURSO EM VIDEO    ')
+lin()
+print('     APRENDA PYTHON     ')
+lin()
+print('     GUSTAVO GUANABARA      ')
+lin()
+
+def título(txt):
+    print('-' * 30)
+    print(txt)
+    print('-' * 30)
+
+# Programa Principal
+título('     CURSO EM VIDEO    ')
+título('     APRENDA PYTHON     ')
+título('     GUSTAVO GUANABARA      ')
+
 def soma(a, b):
     print(f'A = {a}, B = {b}')
     s = a + b
