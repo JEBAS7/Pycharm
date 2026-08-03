@@ -41,8 +41,8 @@ contador(10, 0, 2)
 print('-=' * 20)
 print('Agora é sua vez de personalizar a contagem!')
 ini = int(input('Início: '))
-fim = int(input('Fim: '))
-pas = int(input('Passo: '))
+fim = int(input('Fim:    '))
+pas = int(input('Passo:  '))
 
 # Envia os dados lidos do teclado para a função trabalhar
 contador(ini, fim, pas)

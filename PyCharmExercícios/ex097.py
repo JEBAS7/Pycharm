@@ -3,8 +3,10 @@ def escreva(txt):
     print(txt)
     print('~' * len(txt))
 
+
+# Programa Principal
 escreva('   Gustavo Guanabara   ')
-escreva('   Curso de Python no YouTube    ')
+escreva('   Curso de Python no YouTube  ')
 escreva('   CeV   ')
 
 
