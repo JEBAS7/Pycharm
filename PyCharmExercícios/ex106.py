@@ -6,7 +6,7 @@ def biblioteca(txt):
 
     while True:
         # Ativa fundo preto e texto verde para todo o bloco
-        sys.stdout.write('\033[1;32;40m')
+        sys.stdout.write('\033[1;92;40m')
         sys.stdout.flush()
 
         # Cabeçalho do PyHELP
