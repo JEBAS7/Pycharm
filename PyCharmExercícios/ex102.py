@@ -25,4 +25,4 @@ print()
 print('-' * 30)
 
 # Se você tirar o comentário da linha abaixo, verá o seu manual na tela:
-help(fatorial)
+# help(fatorial)

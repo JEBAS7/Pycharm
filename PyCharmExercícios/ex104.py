@@ -7,7 +7,7 @@ def leiaInt(msg):
                 return numero
         else:
             # Trocamos o 'return' por 'print' para o loop NÃO parar!
-            print('\033[31mERRO! Digite um número inteiro válido.\033[m')
+            print('\033[91mERRO! Digite um número inteiro válido.\033[m')
 
 
 # Programa Principal

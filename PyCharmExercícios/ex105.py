@@ -15,7 +15,7 @@ def notas(*n, sit=False):
         if notas['media'] >= 7:
             notas['situacao'] = 'BOA'  # Salva direto na chave do dicionário
         elif notas['media'] >= 5:
-            notas['situacao'] = 'RAZOÁVEL'  # Correção da grafia com 'Z'
+            notas['situacao'] = 'RAZOÁVEL'
         else:
             notas['situacao'] = 'RUIM'
 

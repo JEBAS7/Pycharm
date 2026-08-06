@@ -1,7 +1,5 @@
-from datetime import date
-
-
 def voto(ano):
+    from datetime import date
     atual = date.today().year
     idade = atual - ano
 
