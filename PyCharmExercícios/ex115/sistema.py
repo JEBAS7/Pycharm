@@ -6,6 +6,7 @@ arq = 'cursoemvideo.txt'
 if not arquivoExiste(arq):
     criarArquivo(arq)
 
+
 while True:
     resposta = menu(['Ver pessoas cadrastradas', 'Cadrastrar nova Pessoa', 'Sair do Sistema'])
     if resposta == 1:
